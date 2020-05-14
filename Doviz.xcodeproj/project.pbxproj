@@ -1,0 +1,595 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F8D25F04246D1F9400E61A41 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8D25F03246D1F9400E61A41 /* AppDelegate.swift */; };
+		F8D25F06246D1F9400E61A41 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8D25F05246D1F9400E61A41 /* SceneDelegate.swift */; };
+		F8D25F08246D1F9400E61A41 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8D25F07246D1F9400E61A41 /* ViewController.swift */; };
+		F8D25F0B246D1F9400E61A41 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F8D25F09246D1F9400E61A41 /* Main.storyboard */; };
+		F8D25F0D246D1F9700E61A41 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F8D25F0C246D1F9700E61A41 /* Assets.xcassets */; };
+		F8D25F10246D1F9700E61A41 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F8D25F0E246D1F9700E61A41 /* LaunchScreen.storyboard */; };
+		F8D25F1B246D1F9700E61A41 /* DovizTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8D25F1A246D1F9700E61A41 /* DovizTests.swift */; };
+		F8D25F26246D1F9700E61A41 /* DovizUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8D25F25246D1F9700E61A41 /* DovizUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F8D25F17246D1F9700E61A41 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F8D25EF8246D1F9400E61A41 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F8D25EFF246D1F9400E61A41;
+			remoteInfo = Doviz;
+		};
+		F8D25F22246D1F9700E61A41 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F8D25EF8246D1F9400E61A41 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F8D25EFF246D1F9400E61A41;
+			remoteInfo = Doviz;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		F8D25F00246D1F9400E61A41 /* Doviz.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Doviz.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F8D25F03246D1F9400E61A41 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F8D25F05246D1F9400E61A41 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		F8D25F07246D1F9400E61A41 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F8D25F0A246D1F9400E61A41 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F8D25F0C246D1F9700E61A41 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F8D25F0F246D1F9700E61A41 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F8D25F11246D1F9700E61A41 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F8D25F16246D1F9700E61A41 /* DovizTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DovizTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F8D25F1A246D1F9700E61A41 /* DovizTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DovizTests.swift; sourceTree = "<group>"; };
+		F8D25F1C246D1F9700E61A41 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F8D25F21246D1F9700E61A41 /* DovizUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DovizUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F8D25F25246D1F9700E61A41 /* DovizUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DovizUITests.swift; sourceTree = "<group>"; };
+		F8D25F27246D1F9700E61A41 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F8D25EFD246D1F9400E61A41 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F8D25F13246D1F9700E61A41 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F8D25F1E246D1F9700E61A41 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F8D25EF7246D1F9400E61A41 = {
+			isa = PBXGroup;
+			children = (
+				F8D25F02246D1F9400E61A41 /* Doviz */,
+				F8D25F19246D1F9700E61A41 /* DovizTests */,
+				F8D25F24246D1F9700E61A41 /* DovizUITests */,
+				F8D25F01246D1F9400E61A41 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F8D25F01246D1F9400E61A41 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F8D25F00246D1F9400E61A41 /* Doviz.app */,
+				F8D25F16246D1F9700E61A41 /* DovizTests.xctest */,
+				F8D25F21246D1F9700E61A41 /* DovizUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F8D25F02246D1F9400E61A41 /* Doviz */ = {
+			isa = PBXGroup;
+			children = (
+				F8D25F03246D1F9400E61A41 /* AppDelegate.swift */,
+				F8D25F05246D1F9400E61A41 /* SceneDelegate.swift */,
+				F8D25F07246D1F9400E61A41 /* ViewController.swift */,
+				F8D25F09246D1F9400E61A41 /* Main.storyboard */,
+				F8D25F0C246D1F9700E61A41 /* Assets.xcassets */,
+				F8D25F0E246D1F9700E61A41 /* LaunchScreen.storyboard */,
+				F8D25F11246D1F9700E61A41 /* Info.plist */,
+			);
+			path = Doviz;
+			sourceTree = "<group>";
+		};
+		F8D25F19246D1F9700E61A41 /* DovizTests */ = {
+			isa = PBXGroup;
+			children = (
+				F8D25F1A246D1F9700E61A41 /* DovizTests.swift */,
+				F8D25F1C246D1F9700E61A41 /* Info.plist */,
+			);
+			path = DovizTests;
+			sourceTree = "<group>";
+		};
+		F8D25F24246D1F9700E61A41 /* DovizUITests */ = {
+			isa = PBXGroup;
+			children = (
+				F8D25F25246D1F9700E61A41 /* DovizUITests.swift */,
+				F8D25F27246D1F9700E61A41 /* Info.plist */,
+			);
+			path = DovizUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F8D25EFF246D1F9400E61A41 /* Doviz */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F8D25F2A246D1F9700E61A41 /* Build configuration list for PBXNativeTarget "Doviz" */;
+			buildPhases = (
+				F8D25EFC246D1F9400E61A41 /* Sources */,
+				F8D25EFD246D1F9400E61A41 /* Frameworks */,
+				F8D25EFE246D1F9400E61A41 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Doviz;
+			productName = Doviz;
+			productReference = F8D25F00246D1F9400E61A41 /* Doviz.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F8D25F15246D1F9700E61A41 /* DovizTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F8D25F2D246D1F9700E61A41 /* Build configuration list for PBXNativeTarget "DovizTests" */;
+			buildPhases = (
+				F8D25F12246D1F9700E61A41 /* Sources */,
+				F8D25F13246D1F9700E61A41 /* Frameworks */,
+				F8D25F14246D1F9700E61A41 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F8D25F18246D1F9700E61A41 /* PBXTargetDependency */,
+			);
+			name = DovizTests;
+			productName = DovizTests;
+			productReference = F8D25F16246D1F9700E61A41 /* DovizTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		F8D25F20246D1F9700E61A41 /* DovizUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F8D25F30246D1F9700E61A41 /* Build configuration list for PBXNativeTarget "DovizUITests" */;
+			buildPhases = (
+				F8D25F1D246D1F9700E61A41 /* Sources */,
+				F8D25F1E246D1F9700E61A41 /* Frameworks */,
+				F8D25F1F246D1F9700E61A41 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F8D25F23246D1F9700E61A41 /* PBXTargetDependency */,
+			);
+			name = DovizUITests;
+			productName = DovizUITests;
+			productReference = F8D25F21246D1F9700E61A41 /* DovizUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F8D25EF8246D1F9400E61A41 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1140;
+				LastUpgradeCheck = 1140;
+				ORGANIZATIONNAME = "Berkant Beğdilili";
+				TargetAttributes = {
+					F8D25EFF246D1F9400E61A41 = {
+						CreatedOnToolsVersion = 11.4.1;
+					};
+					F8D25F15246D1F9700E61A41 = {
+						CreatedOnToolsVersion = 11.4.1;
+						TestTargetID = F8D25EFF246D1F9400E61A41;
+					};
+					F8D25F20246D1F9700E61A41 = {
+						CreatedOnToolsVersion = 11.4.1;
+						TestTargetID = F8D25EFF246D1F9400E61A41;
+					};
+				};
+			};
+			buildConfigurationList = F8D25EFB246D1F9400E61A41 /* Build configuration list for PBXProject "Doviz" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F8D25EF7246D1F9400E61A41;
+			productRefGroup = F8D25F01246D1F9400E61A41 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F8D25EFF246D1F9400E61A41 /* Doviz */,
+				F8D25F15246D1F9700E61A41 /* DovizTests */,
+				F8D25F20246D1F9700E61A41 /* DovizUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F8D25EFE246D1F9400E61A41 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F8D25F10246D1F9700E61A41 /* LaunchScreen.storyboard in Resources */,
+				F8D25F0D246D1F9700E61A41 /* Assets.xcassets in Resources */,
+				F8D25F0B246D1F9400E61A41 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F8D25F14246D1F9700E61A41 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F8D25F1F246D1F9700E61A41 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F8D25EFC246D1F9400E61A41 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F8D25F08246D1F9400E61A41 /* ViewController.swift in Sources */,
+				F8D25F04246D1F9400E61A41 /* AppDelegate.swift in Sources */,
+				F8D25F06246D1F9400E61A41 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F8D25F12246D1F9700E61A41 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F8D25F1B246D1F9700E61A41 /* DovizTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F8D25F1D246D1F9700E61A41 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F8D25F26246D1F9700E61A41 /* DovizUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F8D25F18246D1F9700E61A41 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F8D25EFF246D1F9400E61A41 /* Doviz */;
+			targetProxy = F8D25F17246D1F9700E61A41 /* PBXContainerItemProxy */;
+		};
+		F8D25F23246D1F9700E61A41 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F8D25EFF246D1F9400E61A41 /* Doviz */;
+			targetProxy = F8D25F22246D1F9700E61A41 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F8D25F09246D1F9400E61A41 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F8D25F0A246D1F9400E61A41 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F8D25F0E246D1F9700E61A41 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F8D25F0F246D1F9700E61A41 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F8D25F28246D1F9700E61A41 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F8D25F29246D1F9700E61A41 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F8D25F2B246D1F9700E61A41 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2BH44AM79Q;
+				INFOPLIST_FILE = Doviz/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.berkantbegdilili.Doviz;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F8D25F2C246D1F9700E61A41 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2BH44AM79Q;
+				INFOPLIST_FILE = Doviz/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.berkantbegdilili.Doviz;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		F8D25F2E246D1F9700E61A41 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2BH44AM79Q;
+				INFOPLIST_FILE = DovizTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.berkantbegdilili.DovizTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Doviz.app/Doviz";
+			};
+			name = Debug;
+		};
+		F8D25F2F246D1F9700E61A41 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2BH44AM79Q;
+				INFOPLIST_FILE = DovizTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.berkantbegdilili.DovizTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Doviz.app/Doviz";
+			};
+			name = Release;
+		};
+		F8D25F31246D1F9700E61A41 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2BH44AM79Q;
+				INFOPLIST_FILE = DovizUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.berkantbegdilili.DovizUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Doviz;
+			};
+			name = Debug;
+		};
+		F8D25F32246D1F9700E61A41 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2BH44AM79Q;
+				INFOPLIST_FILE = DovizUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.berkantbegdilili.DovizUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Doviz;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F8D25EFB246D1F9400E61A41 /* Build configuration list for PBXProject "Doviz" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F8D25F28246D1F9700E61A41 /* Debug */,
+				F8D25F29246D1F9700E61A41 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F8D25F2A246D1F9700E61A41 /* Build configuration list for PBXNativeTarget "Doviz" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F8D25F2B246D1F9700E61A41 /* Debug */,
+				F8D25F2C246D1F9700E61A41 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F8D25F2D246D1F9700E61A41 /* Build configuration list for PBXNativeTarget "DovizTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F8D25F2E246D1F9700E61A41 /* Debug */,
+				F8D25F2F246D1F9700E61A41 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F8D25F30246D1F9700E61A41 /* Build configuration list for PBXNativeTarget "DovizUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F8D25F31246D1F9700E61A41 /* Debug */,
+				F8D25F32246D1F9700E61A41 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F8D25EF8246D1F9400E61A41 /* Project object */;
+}
