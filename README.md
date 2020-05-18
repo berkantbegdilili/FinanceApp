@@ -2,9 +2,9 @@
 
 
 #
-> EN: It shows the data received over the Internet to the user instantly.
+> EN: Transfers currency, gold, crypto money and parity data to IOS interface instantly with "HTML Parse" transaction over the internet.
 #
-> TR: Internet üzerinden alınan verileri anlık olarak kullanıcıya gösterir.
+> TR: İnternet üzerinden "HTML Ayrıştırma" işlemi ile para, altın, kripto para ve parite verilerini anlık olarak IOS arayüzüne aktarır.
 
 
 
