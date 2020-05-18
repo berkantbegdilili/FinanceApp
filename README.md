@@ -9,15 +9,15 @@
 
 
 # Imagery (Görüntüler)
-![run1](https://github.com/berkantbegdilili/QuizApp/blob/master/img/openMode-1.png)
+![run1](https://github.com/berkantbegdilili/FinanceApp/blob/master/img/openMode-1.png)
  
-![run2](https://github.com/berkantbegdilili/QuizApp/blob/master/img/openMode-2.png)
+![run2](https://github.com/berkantbegdilili/FinanceApp/blob/master/img/openMode-2.png)
 
-![run3](https://github.com/berkantbegdilili/QuizApp/blob/master/img/openMode-3.png)
+![run3](https://github.com/berkantbegdilili/FinanceApp/blob/master/img/openMode-3.png)
 
-![run4](https://github.com/berkantbegdilili/QuizApp/blob/master/img/openMode-4.png)
+![run4](https://github.com/berkantbegdilili/FinanceApp/blob/master/img/openMode-4.png)
 
-![run5](https://github.com/berkantbegdilili/QuizApp/blob/master/img/darkMode-1.png)
+![run5](https://github.com/berkantbegdilili/FinanceApp/blob/master/img/darkMode-1.png)
  
 
 #
