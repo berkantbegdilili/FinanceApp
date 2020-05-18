@@ -1,0 +1,570 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="pBV-VE-6BB">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Tab Bar Controller-->
+        <scene sceneID="n4f-1w-SeM">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="pBV-VE-6BB" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Ujc-vN-tOF">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="God-m6-2vA" kind="relationship" relationship="viewControllers" id="UYc-x7-PYO"/>
+                        <segue destination="r3l-dI-h8Y" kind="relationship" relationship="viewControllers" id="uNa-eb-Vgs"/>
+                        <segue destination="i2G-yL-3rp" kind="relationship" relationship="viewControllers" id="Onv-UY-dqq"/>
+                        <segue destination="ZzV-ND-XOU" kind="relationship" relationship="viewControllers" id="M93-DK-8yW"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="d1o-lc-zNh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="261" y="92"/>
+        </scene>
+        <!--Finans-->
+        <scene sceneID="n4L-82-2c0">
+            <objects>
+                <viewController title="Finans" id="God-m6-2vA" customClass="DovizVC" customModule="Doviz" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="tTz-rl-yoK">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="1yg-gp-hGP">
+                                <rect key="frame" x="282" y="282" width="37" height="37"/>
+                            </activityIndicatorView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Veriler Yükleniyor..." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g6r-9j-LpW">
+                                <rect key="frame" x="228" y="339" width="145" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="ifB-ae-nkb">
+                                <rect key="frame" x="0.0" y="44" width="600" height="556"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="DovizTVCell" rowHeight="120" id="ieZ-wo-Sxz" customClass="DovizTVCell" customModule="Doviz" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="120"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ieZ-wo-Sxz" id="BU1-TM-tXd">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="120"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ISIM" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rg9-yH-X7v">
+                                                    <rect key="frame" x="186.5" y="1" width="41" height="24"/>
+                                                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Son Güncellenme: 00:00" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9QT-gI-lQv">
+                                                    <rect key="frame" x="239.5" y="92" width="169.5" height="18"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="XaJ-mz-0xj">
+                                                    <rect key="frame" x="0.0" y="30" width="414" height="60"/>
+                                                    <subviews>
+                                                        <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ALIŞ" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YAK-Xc-HSU">
+                                                            <rect key="frame" x="0.0" y="20" width="134.5" height="20.5"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SATIŞ" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Oe7-Kl-nof">
+                                                            <rect key="frame" x="139.5" y="20" width="135" height="20.5"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" spacing="-40" translatesAutoresizingMaskIntoConstraints="NO" id="UJ0-5A-axB">
+                                                            <rect key="frame" x="279.5" y="20" width="134.5" height="51"/>
+                                                            <subviews>
+                                                                <imageView clipsSubviews="YES" contentMode="scaleAspectFit" image="arrow.up.right" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="toD-BS-S9j">
+                                                                    <rect key="frame" x="0.0" y="1" width="87" height="17.5"/>
+                                                                    <color key="tintColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="large" weight="semibold"/>
+                                                                </imageView>
+                                                                <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="FARK" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vSA-4E-F9l">
+                                                                    <rect key="frame" x="47" y="0.0" width="87.5" height="20.5"/>
+                                                                    <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="17"/>
+                                                                    <nil key="textColor"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                            </subviews>
+                                                        </stackView>
+                                                    </subviews>
+                                                </stackView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="bottom" secondItem="XaJ-mz-0xj" secondAttribute="bottom" constant="30" id="4mR-73-AZZ"/>
+                                                <constraint firstItem="9QT-gI-lQv" firstAttribute="top" secondItem="XaJ-mz-0xj" secondAttribute="bottom" constant="2" id="8q4-LQ-0Td"/>
+                                                <constraint firstItem="rg9-yH-X7v" firstAttribute="centerX" secondItem="BU1-TM-tXd" secondAttribute="centerX" id="Jg1-R1-ihb"/>
+                                                <constraint firstItem="XaJ-mz-0xj" firstAttribute="leading" secondItem="BU1-TM-tXd" secondAttribute="leading" id="OsI-1f-cOJ"/>
+                                                <constraint firstAttribute="trailing" secondItem="9QT-gI-lQv" secondAttribute="trailing" constant="5" id="ZFu-mK-e5j"/>
+                                                <constraint firstItem="rg9-yH-X7v" firstAttribute="top" secondItem="BU1-TM-tXd" secondAttribute="top" constant="1" id="gLV-30-d6B"/>
+                                                <constraint firstAttribute="trailing" secondItem="XaJ-mz-0xj" secondAttribute="trailing" id="qhI-1h-v8G"/>
+                                                <constraint firstItem="XaJ-mz-0xj" firstAttribute="top" secondItem="BU1-TM-tXd" secondAttribute="top" constant="30" id="reV-Zb-On1"/>
+                                                <constraint firstItem="9QT-gI-lQv" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="BU1-TM-tXd" secondAttribute="leading" constant="20" symbolic="YES" id="uCZ-V4-j9q"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="alis" destination="YAK-Xc-HSU" id="nPf-za-LxG"/>
+                                            <outlet property="fark" destination="vSA-4E-F9l" id="ok6-sm-uHn"/>
+                                            <outlet property="farkImage" destination="toD-BS-S9j" id="hFd-3u-jNB"/>
+                                            <outlet property="guncelleme" destination="9QT-gI-lQv" id="C9c-xm-Qbo"/>
+                                            <outlet property="isim" destination="rg9-yH-X7v" id="zKK-dW-amC"/>
+                                            <outlet property="satis" destination="Oe7-Kl-nof" id="8k9-dO-l4s"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Gry-aV-21F">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
+                                <items>
+                                    <navigationItem title="Döviz" id="5wN-oQ-E8t"/>
+                                </items>
+                            </navigationBar>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="1yg-gp-hGP" firstAttribute="centerX" secondItem="tTz-rl-yoK" secondAttribute="centerX" id="0OY-dc-Q2w"/>
+                            <constraint firstItem="Gry-aV-21F" firstAttribute="leading" secondItem="xDL-LO-DGL" secondAttribute="leading" id="5Dr-QJ-QZG"/>
+                            <constraint firstItem="g6r-9j-LpW" firstAttribute="centerX" secondItem="tTz-rl-yoK" secondAttribute="centerX" id="8WV-qY-idg"/>
+                            <constraint firstItem="ifB-ae-nkb" firstAttribute="top" secondItem="Gry-aV-21F" secondAttribute="bottom" id="GlG-GX-VcF"/>
+                            <constraint firstItem="ifB-ae-nkb" firstAttribute="top" secondItem="Gry-aV-21F" secondAttribute="bottom" id="O2t-Jf-wD8"/>
+                            <constraint firstItem="Gry-aV-21F" firstAttribute="top" secondItem="xDL-LO-DGL" secondAttribute="top" id="OHn-GP-OYj"/>
+                            <constraint firstItem="Gry-aV-21F" firstAttribute="trailing" secondItem="xDL-LO-DGL" secondAttribute="trailing" id="Tfl-eQ-wKr"/>
+                            <constraint firstItem="ifB-ae-nkb" firstAttribute="bottom" secondItem="xDL-LO-DGL" secondAttribute="bottom" id="WaI-tk-jxX"/>
+                            <constraint firstItem="ifB-ae-nkb" firstAttribute="trailing" secondItem="xDL-LO-DGL" secondAttribute="trailing" id="jvY-cs-bhH"/>
+                            <constraint firstItem="ifB-ae-nkb" firstAttribute="leading" secondItem="xDL-LO-DGL" secondAttribute="leading" id="l9k-fe-SJ3"/>
+                            <constraint firstItem="1yg-gp-hGP" firstAttribute="centerY" secondItem="tTz-rl-yoK" secondAttribute="centerY" id="vYr-ae-Yxo"/>
+                            <constraint firstItem="g6r-9j-LpW" firstAttribute="top" secondItem="1yg-gp-hGP" secondAttribute="bottom" constant="20" id="ywS-pl-CVf"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="xDL-LO-DGL"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Döviz" image="dollarsign.circle" catalog="system" id="Unw-Ad-b9v"/>
+                    <navigationItem key="navigationItem" title="Döviz" largeTitleDisplayMode="always" id="PGL-F9-M41"/>
+                    <connections>
+                        <outlet property="loadingBar" destination="1yg-gp-hGP" id="8x0-i2-J52"/>
+                        <outlet property="loadingLabel" destination="g6r-9j-LpW" id="WuP-s2-Jim"/>
+                        <outlet property="tableView" destination="ifB-ae-nkb" id="UQP-Zn-Mfd"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ACv-De-4La" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1040.5797101449275" y="91.741071428571431"/>
+        </scene>
+        <!--Altın-->
+        <scene sceneID="mae-XE-eed">
+            <objects>
+                <viewController title="Altın" id="r3l-dI-h8Y" customClass="AltinVC" customModule="Doviz" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Wb4-mB-q8l">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="B0f-sg-dBO">
+                                <rect key="frame" x="282" y="282" width="37" height="37"/>
+                            </activityIndicatorView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Veriler Yükleniyor..." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5A1-pz-bUf">
+                                <rect key="frame" x="228" y="339" width="145" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Ez1-Si-yh4">
+                                <rect key="frame" x="0.0" y="44" width="600" height="556"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="AltinTVCell" rowHeight="120" id="E81-JU-U74" customClass="AltinTVCell" customModule="Doviz" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="120"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="E81-JU-U74" id="jG2-Ji-VPS">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="120"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ISIM" textAlignment="natural" lineBreakMode="tailTruncation" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u4L-d2-P82">
+                                                    <rect key="frame" x="186.5" y="1" width="41" height="24"/>
+                                                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Son Güncellenme: 00:00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gUR-ax-VUf">
+                                                    <rect key="frame" x="239.5" y="92" width="169.5" height="18"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="fg9-y1-vIF">
+                                                    <rect key="frame" x="0.0" y="30" width="414" height="60"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="138" placeholderIntrinsicHeight="70" text="ALIŞ" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sO3-gQ-Eip">
+                                                            <rect key="frame" x="0.0" y="0.0" width="138" height="60"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="138" placeholderIntrinsicHeight="70" text="SATIŞ" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aeC-bw-sTr">
+                                                            <rect key="frame" x="138" y="0.0" width="138" height="60"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" spacing="-40" translatesAutoresizingMaskIntoConstraints="NO" id="REd-Xf-BCV">
+                                                            <rect key="frame" x="276" y="20" width="138" height="11"/>
+                                                            <subviews>
+                                                                <imageView clipsSubviews="YES" contentMode="scaleAspectFit" image="arrow.up.right" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="a08-BK-jTl">
+                                                                    <rect key="frame" x="0.0" y="1" width="89" height="17.5"/>
+                                                                    <color key="tintColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="large" weight="semibold"/>
+                                                                </imageView>
+                                                                <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="FARK" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HDR-be-Ay2">
+                                                                    <rect key="frame" x="49" y="0.0" width="89" height="20.5"/>
+                                                                    <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="17"/>
+                                                                    <nil key="textColor"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                            </subviews>
+                                                        </stackView>
+                                                    </subviews>
+                                                </stackView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="fg9-y1-vIF" firstAttribute="top" secondItem="jG2-Ji-VPS" secondAttribute="top" constant="30" id="0ME-UP-VKI"/>
+                                                <constraint firstAttribute="bottom" secondItem="fg9-y1-vIF" secondAttribute="bottom" constant="30" id="0RS-bT-lP2"/>
+                                                <constraint firstAttribute="trailing" secondItem="fg9-y1-vIF" secondAttribute="trailing" id="ITl-Q0-rt2"/>
+                                                <constraint firstItem="gUR-ax-VUf" firstAttribute="top" secondItem="fg9-y1-vIF" secondAttribute="bottom" constant="2" id="Ipf-T4-Ftf"/>
+                                                <constraint firstItem="u4L-d2-P82" firstAttribute="centerX" secondItem="jG2-Ji-VPS" secondAttribute="centerX" id="WM6-Ec-865"/>
+                                                <constraint firstItem="u4L-d2-P82" firstAttribute="top" secondItem="jG2-Ji-VPS" secondAttribute="top" constant="1" id="Ylh-ir-vIR"/>
+                                                <constraint firstItem="fg9-y1-vIF" firstAttribute="leading" secondItem="jG2-Ji-VPS" secondAttribute="leading" id="lgR-pt-Sgd"/>
+                                                <constraint firstAttribute="trailing" secondItem="gUR-ax-VUf" secondAttribute="trailing" constant="5" id="sFY-3x-W2H"/>
+                                                <constraint firstItem="gUR-ax-VUf" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="jG2-Ji-VPS" secondAttribute="leading" constant="20" symbolic="YES" id="wWF-Y2-Ekp"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="alis" destination="sO3-gQ-Eip" id="98Z-4z-4qL"/>
+                                            <outlet property="fark" destination="HDR-be-Ay2" id="hUS-uZ-M0I"/>
+                                            <outlet property="farkImage" destination="a08-BK-jTl" id="au6-vz-Phd"/>
+                                            <outlet property="guncelleme" destination="gUR-ax-VUf" id="boq-UE-8eS"/>
+                                            <outlet property="isim" destination="u4L-d2-P82" id="0uY-ZJ-H5B"/>
+                                            <outlet property="satis" destination="aeC-bw-sTr" id="naw-JL-M6q"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Uo7-pC-f2P">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
+                                <items>
+                                    <navigationItem title="Altın" id="VrW-zI-t06"/>
+                                </items>
+                            </navigationBar>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="Uo7-pC-f2P" firstAttribute="top" secondItem="xot-C6-gex" secondAttribute="top" id="32w-VP-wjA"/>
+                            <constraint firstItem="Uo7-pC-f2P" firstAttribute="trailing" secondItem="xot-C6-gex" secondAttribute="trailing" id="9lp-QC-BfC"/>
+                            <constraint firstItem="Ez1-Si-yh4" firstAttribute="trailing" secondItem="xot-C6-gex" secondAttribute="trailing" id="Cee-pe-6Qi"/>
+                            <constraint firstItem="Ez1-Si-yh4" firstAttribute="top" secondItem="Uo7-pC-f2P" secondAttribute="bottom" id="Clq-2t-6Th"/>
+                            <constraint firstItem="5A1-pz-bUf" firstAttribute="centerX" secondItem="Wb4-mB-q8l" secondAttribute="centerX" id="I3N-uF-cCy"/>
+                            <constraint firstItem="B0f-sg-dBO" firstAttribute="centerY" secondItem="Wb4-mB-q8l" secondAttribute="centerY" id="JG5-wX-ua0"/>
+                            <constraint firstItem="Ez1-Si-yh4" firstAttribute="top" secondItem="Uo7-pC-f2P" secondAttribute="bottom" id="MwW-tv-Zxx"/>
+                            <constraint firstItem="Ez1-Si-yh4" firstAttribute="bottom" secondItem="xot-C6-gex" secondAttribute="bottom" id="QD3-Av-Pjb"/>
+                            <constraint firstItem="B0f-sg-dBO" firstAttribute="centerX" secondItem="Wb4-mB-q8l" secondAttribute="centerX" id="Scf-V3-5st"/>
+                            <constraint firstItem="5A1-pz-bUf" firstAttribute="top" secondItem="B0f-sg-dBO" secondAttribute="bottom" constant="20" id="hhV-qM-hz4"/>
+                            <constraint firstItem="Uo7-pC-f2P" firstAttribute="leading" secondItem="xot-C6-gex" secondAttribute="leading" id="sZw-8t-1oo"/>
+                            <constraint firstItem="Ez1-Si-yh4" firstAttribute="leading" secondItem="xot-C6-gex" secondAttribute="leading" id="zvB-XD-TmO"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="xot-C6-gex"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Altın" image="a.circle" catalog="system" id="eSH-f9-4k1"/>
+                    <navigationItem key="navigationItem" title="Döviz" largeTitleDisplayMode="always" id="Wlh-T6-n2z"/>
+                    <connections>
+                        <outlet property="loadingBar" destination="B0f-sg-dBO" id="l4W-Pb-XcJ"/>
+                        <outlet property="loadingLabel" destination="5A1-pz-bUf" id="pSl-ho-QV2"/>
+                        <outlet property="tableView" destination="Ez1-Si-yh4" id="LBB-fE-u1l"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8Pu-5o-FaS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1736" y="92"/>
+        </scene>
+        <!--Kripto Paralar-->
+        <scene sceneID="Jc9-MO-Ps0">
+            <objects>
+                <viewController title="Kripto Paralar" id="i2G-yL-3rp" customClass="KriptoVC" customModule="Doviz" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="k3h-9J-qKd">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="wKN-ac-9Va">
+                                <rect key="frame" x="282" y="282" width="37" height="37"/>
+                            </activityIndicatorView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Veriler Yükleniyor..." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7R2-CF-sV7">
+                                <rect key="frame" x="228" y="339" width="145" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="ZEa-Tn-uAe">
+                                <rect key="frame" x="0.0" y="44" width="600" height="556"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="KriptoTVCell" rowHeight="120" id="Ngc-9N-VPf" customClass="KriptoTVCell" customModule="Doviz" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="120"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Ngc-9N-VPf" id="9Qa-Ze-SWb">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="120"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ISIM" textAlignment="natural" lineBreakMode="tailTruncation" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wDt-tK-Txt">
+                                                    <rect key="frame" x="186.5" y="1" width="41" height="24"/>
+                                                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Son Güncellenme: 00:00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mwn-EZ-nDp">
+                                                    <rect key="frame" x="239.5" y="92" width="169.5" height="18"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Vvd-Vf-rzT">
+                                                    <rect key="frame" x="0.0" y="30" width="414" height="60"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="138" placeholderIntrinsicHeight="70" text="ALIŞ" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bFh-Vh-Rrx">
+                                                            <rect key="frame" x="0.0" y="0.0" width="138" height="60"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="138" placeholderIntrinsicHeight="70" text="SATIŞ" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gfa-6q-aBv">
+                                                            <rect key="frame" x="138" y="0.0" width="138" height="60"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" spacing="-40" translatesAutoresizingMaskIntoConstraints="NO" id="6VP-PY-f0F">
+                                                            <rect key="frame" x="276" y="20" width="138" height="57"/>
+                                                            <subviews>
+                                                                <imageView clipsSubviews="YES" contentMode="scaleAspectFit" image="arrow.up.right" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="RNY-UP-ODs">
+                                                                    <rect key="frame" x="0.0" y="1" width="89" height="17.5"/>
+                                                                    <color key="tintColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="large" weight="semibold"/>
+                                                                </imageView>
+                                                                <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="FARK" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8aA-Gh-Yxh">
+                                                                    <rect key="frame" x="49" y="0.0" width="89" height="20.5"/>
+                                                                    <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="17"/>
+                                                                    <nil key="textColor"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                            </subviews>
+                                                        </stackView>
+                                                    </subviews>
+                                                </stackView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="trailing" secondItem="mwn-EZ-nDp" secondAttribute="trailing" constant="5" id="KwC-Ws-hpg"/>
+                                                <constraint firstAttribute="bottom" secondItem="Vvd-Vf-rzT" secondAttribute="bottom" constant="30" id="L4a-Cq-9fx"/>
+                                                <constraint firstItem="wDt-tK-Txt" firstAttribute="top" secondItem="9Qa-Ze-SWb" secondAttribute="top" constant="1" id="XkQ-AH-THL"/>
+                                                <constraint firstItem="wDt-tK-Txt" firstAttribute="centerX" secondItem="9Qa-Ze-SWb" secondAttribute="centerX" id="cqp-mU-8pR"/>
+                                                <constraint firstAttribute="trailing" secondItem="Vvd-Vf-rzT" secondAttribute="trailing" id="t1N-6D-OEK"/>
+                                                <constraint firstItem="Vvd-Vf-rzT" firstAttribute="leading" secondItem="9Qa-Ze-SWb" secondAttribute="leading" id="tf9-tn-6TE"/>
+                                                <constraint firstItem="mwn-EZ-nDp" firstAttribute="top" secondItem="Vvd-Vf-rzT" secondAttribute="bottom" constant="2" id="vHh-wN-XQT"/>
+                                                <constraint firstItem="mwn-EZ-nDp" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="9Qa-Ze-SWb" secondAttribute="leading" constant="20" symbolic="YES" id="wkc-R4-8cE"/>
+                                                <constraint firstItem="Vvd-Vf-rzT" firstAttribute="top" secondItem="9Qa-Ze-SWb" secondAttribute="top" constant="30" id="xlA-H4-fCg"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="fark" destination="8aA-Gh-Yxh" id="Ps7-ap-H38"/>
+                                            <outlet property="farkImage" destination="RNY-UP-ODs" id="FDH-sW-rSh"/>
+                                            <outlet property="guncelleme" destination="mwn-EZ-nDp" id="bLd-TD-p2f"/>
+                                            <outlet property="isim" destination="wDt-tK-Txt" id="Vx7-8C-P3e"/>
+                                            <outlet property="satisDolar" destination="bFh-Vh-Rrx" id="ojo-BB-YbE"/>
+                                            <outlet property="satisTurkLirasi" destination="Gfa-6q-aBv" id="2Ry-vv-dM6"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="akm-e9-las">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
+                                <items>
+                                    <navigationItem title="Kripto Paralar" id="oYG-OX-lLq"/>
+                                </items>
+                            </navigationBar>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="ZEa-Tn-uAe" firstAttribute="top" secondItem="akm-e9-las" secondAttribute="bottom" id="0mp-ih-deL"/>
+                            <constraint firstItem="akm-e9-las" firstAttribute="top" secondItem="laL-gH-yPp" secondAttribute="top" id="13y-nz-Dhm"/>
+                            <constraint firstItem="wKN-ac-9Va" firstAttribute="centerY" secondItem="k3h-9J-qKd" secondAttribute="centerY" id="4c9-IY-k66"/>
+                            <constraint firstItem="ZEa-Tn-uAe" firstAttribute="leading" secondItem="laL-gH-yPp" secondAttribute="leading" id="6Fh-QN-f1I"/>
+                            <constraint firstItem="akm-e9-las" firstAttribute="trailing" secondItem="laL-gH-yPp" secondAttribute="trailing" id="PDq-oR-arr"/>
+                            <constraint firstItem="7R2-CF-sV7" firstAttribute="top" secondItem="wKN-ac-9Va" secondAttribute="bottom" constant="20" id="SX9-TS-71y"/>
+                            <constraint firstItem="ZEa-Tn-uAe" firstAttribute="bottom" secondItem="laL-gH-yPp" secondAttribute="bottom" id="cAU-Ii-lSa"/>
+                            <constraint firstItem="ZEa-Tn-uAe" firstAttribute="trailing" secondItem="laL-gH-yPp" secondAttribute="trailing" id="cj8-0g-K81"/>
+                            <constraint firstItem="akm-e9-las" firstAttribute="leading" secondItem="laL-gH-yPp" secondAttribute="leading" id="dPF-td-aIa"/>
+                            <constraint firstItem="ZEa-Tn-uAe" firstAttribute="top" secondItem="akm-e9-las" secondAttribute="bottom" id="iyI-gz-tFz"/>
+                            <constraint firstItem="wKN-ac-9Va" firstAttribute="centerX" secondItem="k3h-9J-qKd" secondAttribute="centerX" id="paR-EP-n9D"/>
+                            <constraint firstItem="7R2-CF-sV7" firstAttribute="centerX" secondItem="k3h-9J-qKd" secondAttribute="centerX" id="tZW-jm-1o1"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="laL-gH-yPp"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Kripto Paralar" image="bitcoinsign.circle" catalog="system" id="nmF-DI-aCN"/>
+                    <navigationItem key="navigationItem" title="Döviz" largeTitleDisplayMode="always" id="6nS-3H-C6d"/>
+                    <connections>
+                        <outlet property="loadingBar" destination="wKN-ac-9Va" id="pNE-B5-Xmf"/>
+                        <outlet property="loadingLabel" destination="7R2-CF-sV7" id="zzh-GI-6bu"/>
+                        <outlet property="tableView" destination="ZEa-Tn-uAe" id="L57-8l-HNo"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hni-hQ-2J0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2413" y="92"/>
+        </scene>
+        <!--Pariteler-->
+        <scene sceneID="UuM-6n-eDB">
+            <objects>
+                <viewController title="Pariteler" id="ZzV-ND-XOU" customClass="ParitelerVC" customModule="Doviz" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="4i8-hK-Ybj">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="umY-nd-KgK">
+                                <rect key="frame" x="282" y="282" width="37" height="37"/>
+                            </activityIndicatorView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Veriler Yükleniyor..." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qqG-Ps-8Oz">
+                                <rect key="frame" x="228" y="339" width="145" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="YUv-SA-bdw">
+                                <rect key="frame" x="0.0" y="44" width="600" height="556"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="ParitelerTVCell" rowHeight="120" id="BBE-Po-BOc" customClass="ParitelerTVCell" customModule="Doviz" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="120"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="BBE-Po-BOc" id="Bj3-xn-lSJ">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="120"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ISIM" textAlignment="natural" lineBreakMode="tailTruncation" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pwr-aO-5Fn">
+                                                    <rect key="frame" x="186.5" y="1" width="41" height="24"/>
+                                                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Son Güncellenme: 00:00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BtQ-Z9-emU">
+                                                    <rect key="frame" x="239.5" y="92" width="169.5" height="18"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="uBP-Dq-8G7">
+                                                    <rect key="frame" x="0.0" y="30" width="414" height="60"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="138" placeholderIntrinsicHeight="70" text="ALIŞ" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E65-8l-4Lh">
+                                                            <rect key="frame" x="0.0" y="0.0" width="138" height="60"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="138" placeholderIntrinsicHeight="70" text="SATIŞ" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PeI-y3-Hpo">
+                                                            <rect key="frame" x="138" y="0.0" width="138" height="60"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" spacing="-40" translatesAutoresizingMaskIntoConstraints="NO" id="bc8-iw-U0i">
+                                                            <rect key="frame" x="276" y="20" width="138" height="92"/>
+                                                            <subviews>
+                                                                <imageView clipsSubviews="YES" contentMode="scaleAspectFit" image="arrow.up.right" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="M3r-NX-op5">
+                                                                    <rect key="frame" x="0.0" y="1" width="89" height="17.5"/>
+                                                                    <color key="tintColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="large" weight="semibold"/>
+                                                                </imageView>
+                                                                <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="FARK" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zrc-9e-YBU">
+                                                                    <rect key="frame" x="49" y="0.0" width="89" height="20.5"/>
+                                                                    <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="17"/>
+                                                                    <nil key="textColor"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                            </subviews>
+                                                        </stackView>
+                                                    </subviews>
+                                                </stackView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="BtQ-Z9-emU" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="Bj3-xn-lSJ" secondAttribute="leading" constant="20" symbolic="YES" id="2Gy-i4-UWy"/>
+                                                <constraint firstItem="uBP-Dq-8G7" firstAttribute="leading" secondItem="Bj3-xn-lSJ" secondAttribute="leading" id="3DR-W1-BTj"/>
+                                                <constraint firstAttribute="trailing" secondItem="uBP-Dq-8G7" secondAttribute="trailing" id="F1E-Uk-rGY"/>
+                                                <constraint firstItem="pwr-aO-5Fn" firstAttribute="centerX" secondItem="Bj3-xn-lSJ" secondAttribute="centerX" id="FLW-jg-3Gu"/>
+                                                <constraint firstItem="pwr-aO-5Fn" firstAttribute="top" secondItem="Bj3-xn-lSJ" secondAttribute="top" constant="1" id="QVz-LS-PHG"/>
+                                                <constraint firstItem="BtQ-Z9-emU" firstAttribute="top" secondItem="uBP-Dq-8G7" secondAttribute="bottom" constant="2" id="VW6-40-fGo"/>
+                                                <constraint firstItem="uBP-Dq-8G7" firstAttribute="top" secondItem="Bj3-xn-lSJ" secondAttribute="top" constant="30" id="ZIK-Od-gCd"/>
+                                                <constraint firstAttribute="trailing" secondItem="BtQ-Z9-emU" secondAttribute="trailing" constant="5" id="i72-ue-dac"/>
+                                                <constraint firstAttribute="bottom" secondItem="uBP-Dq-8G7" secondAttribute="bottom" constant="30" id="sZ1-Qd-xno"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="alis" destination="E65-8l-4Lh" id="1cc-Iz-VFF"/>
+                                            <outlet property="fark" destination="Zrc-9e-YBU" id="G6M-Vj-mSj"/>
+                                            <outlet property="farkImage" destination="M3r-NX-op5" id="Mg6-QD-wqh"/>
+                                            <outlet property="guncelleme" destination="BtQ-Z9-emU" id="cpn-PU-4Qb"/>
+                                            <outlet property="isim" destination="pwr-aO-5Fn" id="86h-8i-mHb"/>
+                                            <outlet property="satis" destination="PeI-y3-Hpo" id="rex-2k-AHf"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="arZ-P6-Vdb">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
+                                <items>
+                                    <navigationItem title="Pariteler ve Çapraz Kurlar" id="xeT-Je-oab"/>
+                                </items>
+                            </navigationBar>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="umY-nd-KgK" firstAttribute="centerX" secondItem="4i8-hK-Ybj" secondAttribute="centerX" id="2Dt-mf-H9Q"/>
+                            <constraint firstItem="arZ-P6-Vdb" firstAttribute="trailing" secondItem="Z1G-zT-pzl" secondAttribute="trailing" id="2f4-Og-hsg"/>
+                            <constraint firstItem="YUv-SA-bdw" firstAttribute="top" secondItem="arZ-P6-Vdb" secondAttribute="bottom" id="5pG-oK-Si0"/>
+                            <constraint firstItem="YUv-SA-bdw" firstAttribute="trailing" secondItem="Z1G-zT-pzl" secondAttribute="trailing" id="7Gg-Hq-tfi"/>
+                            <constraint firstItem="arZ-P6-Vdb" firstAttribute="top" secondItem="Z1G-zT-pzl" secondAttribute="top" id="Gbz-dD-ISo"/>
+                            <constraint firstItem="YUv-SA-bdw" firstAttribute="top" secondItem="arZ-P6-Vdb" secondAttribute="bottom" id="Nyg-Cq-XTf"/>
+                            <constraint firstItem="arZ-P6-Vdb" firstAttribute="leading" secondItem="Z1G-zT-pzl" secondAttribute="leading" id="TjU-kC-rdU"/>
+                            <constraint firstItem="YUv-SA-bdw" firstAttribute="leading" secondItem="Z1G-zT-pzl" secondAttribute="leading" id="Tpu-96-4JL"/>
+                            <constraint firstItem="qqG-Ps-8Oz" firstAttribute="centerX" secondItem="4i8-hK-Ybj" secondAttribute="centerX" id="jvH-bV-UaF"/>
+                            <constraint firstItem="qqG-Ps-8Oz" firstAttribute="top" secondItem="umY-nd-KgK" secondAttribute="bottom" constant="20" id="l6f-8N-O4a"/>
+                            <constraint firstItem="umY-nd-KgK" firstAttribute="centerY" secondItem="4i8-hK-Ybj" secondAttribute="centerY" id="lRm-Oa-MqU"/>
+                            <constraint firstItem="YUv-SA-bdw" firstAttribute="bottom" secondItem="Z1G-zT-pzl" secondAttribute="bottom" id="o73-Oa-bUQ"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Z1G-zT-pzl"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Pariteler" image="p.circle" catalog="system" id="PiF-3p-kmh"/>
+                    <navigationItem key="navigationItem" title="Döviz" largeTitleDisplayMode="always" id="b0m-3U-Dz7"/>
+                    <connections>
+                        <outlet property="loadingBar" destination="umY-nd-KgK" id="1UK-dv-8oy"/>
+                        <outlet property="loadingLabel" destination="qqG-Ps-8Oz" id="3al-WY-F8c"/>
+                        <outlet property="tableView" destination="YUv-SA-bdw" id="NRr-Mq-v24"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9Lo-ia-12W" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3107" y="92"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="a.circle" catalog="system" width="32" height="32"/>
+        <image name="arrow.up.right" catalog="system" width="32" height="32"/>
+        <image name="bitcoinsign.circle" catalog="system" width="32" height="32"/>
+        <image name="dollarsign.circle" catalog="system" width="32" height="32"/>
+        <image name="p.circle" catalog="system" width="32" height="32"/>
+    </resources>
+</document>

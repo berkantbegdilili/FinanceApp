@@ -3,18 +3,34 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F86699F3246E845800F18669 /* KriptoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F86699F2246E845800F18669 /* KriptoVC.swift */; };
+		F86699F7246E850100F18669 /* KriptoCek.swift in Sources */ = {isa = PBXBuildFile; fileRef = F86699F6246E850100F18669 /* KriptoCek.swift */; };
+		F86699F9246E850B00F18669 /* Kripto.swift in Sources */ = {isa = PBXBuildFile; fileRef = F86699F8246E850B00F18669 /* Kripto.swift */; };
+		F86699FB246E880900F18669 /* KriptoTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F86699FA246E880900F18669 /* KriptoTVCell.swift */; };
+		F8669A02246E916E00F18669 /* Altin.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8669A01246E916E00F18669 /* Altin.swift */; };
+		F8669A04246E917900F18669 /* AltinCek.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8669A03246E917900F18669 /* AltinCek.swift */; };
+		F8669A06246E93AA00F18669 /* AltinVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8669A05246E93AA00F18669 /* AltinVC.swift */; };
+		F8669A08246E944400F18669 /* AltinTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8669A07246E944400F18669 /* AltinTVCell.swift */; };
+		F8669A0B246E99F200F18669 /* ParitelerTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8669A0A246E99F200F18669 /* ParitelerTVCell.swift */; };
+		F8669A0D246E9A0300F18669 /* ParitelerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8669A0C246E9A0300F18669 /* ParitelerVC.swift */; };
+		F8669A0F246E9A1200F18669 /* PariteCek.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8669A0E246E9A1200F18669 /* PariteCek.swift */; };
+		F8669A11246E9A1E00F18669 /* Parite.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8669A10246E9A1E00F18669 /* Parite.swift */; };
 		F8D25F04246D1F9400E61A41 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8D25F03246D1F9400E61A41 /* AppDelegate.swift */; };
 		F8D25F06246D1F9400E61A41 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8D25F05246D1F9400E61A41 /* SceneDelegate.swift */; };
-		F8D25F08246D1F9400E61A41 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8D25F07246D1F9400E61A41 /* ViewController.swift */; };
+		F8D25F08246D1F9400E61A41 /* DovizVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8D25F07246D1F9400E61A41 /* DovizVC.swift */; };
 		F8D25F0B246D1F9400E61A41 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F8D25F09246D1F9400E61A41 /* Main.storyboard */; };
 		F8D25F0D246D1F9700E61A41 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F8D25F0C246D1F9700E61A41 /* Assets.xcassets */; };
 		F8D25F10246D1F9700E61A41 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F8D25F0E246D1F9700E61A41 /* LaunchScreen.storyboard */; };
-		F8D25F1B246D1F9700E61A41 /* DovizTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8D25F1A246D1F9700E61A41 /* DovizTests.swift */; };
-		F8D25F26246D1F9700E61A41 /* DovizUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8D25F25246D1F9700E61A41 /* DovizUITests.swift */; };
+		F8D25F1B246D1F9700E61A41 /* FinansTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8D25F1A246D1F9700E61A41 /* FinansTests.swift */; };
+		F8D25F26246D1F9700E61A41 /* FinansUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8D25F25246D1F9700E61A41 /* FinansUITests.swift */; };
+		F8D25F35246D1FCB00E61A41 /* SwiftSoup in Frameworks */ = {isa = PBXBuildFile; productRef = F8D25F34246D1FCB00E61A41 /* SwiftSoup */; };
+		F8D25F37246D201200E61A41 /* DovizCek.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8D25F36246D201200E61A41 /* DovizCek.swift */; };
+		F8D25F39246D624700E61A41 /* Doviz.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8D25F38246D624700E61A41 /* Doviz.swift */; };
+		F8D25F3B246D665800E61A41 /* DovizTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8D25F3A246D665800E61A41 /* DovizTVCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,20 +51,35 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		F8D25F00246D1F9400E61A41 /* Doviz.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Doviz.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F86699F2246E845800F18669 /* KriptoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KriptoVC.swift; sourceTree = "<group>"; };
+		F86699F6246E850100F18669 /* KriptoCek.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KriptoCek.swift; sourceTree = "<group>"; };
+		F86699F8246E850B00F18669 /* Kripto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Kripto.swift; sourceTree = "<group>"; };
+		F86699FA246E880900F18669 /* KriptoTVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KriptoTVCell.swift; sourceTree = "<group>"; };
+		F8669A01246E916E00F18669 /* Altin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Altin.swift; sourceTree = "<group>"; };
+		F8669A03246E917900F18669 /* AltinCek.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AltinCek.swift; sourceTree = "<group>"; };
+		F8669A05246E93AA00F18669 /* AltinVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AltinVC.swift; sourceTree = "<group>"; };
+		F8669A07246E944400F18669 /* AltinTVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AltinTVCell.swift; sourceTree = "<group>"; };
+		F8669A0A246E99F200F18669 /* ParitelerTVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParitelerTVCell.swift; sourceTree = "<group>"; };
+		F8669A0C246E9A0300F18669 /* ParitelerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParitelerVC.swift; sourceTree = "<group>"; };
+		F8669A0E246E9A1200F18669 /* PariteCek.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PariteCek.swift; sourceTree = "<group>"; };
+		F8669A10246E9A1E00F18669 /* Parite.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Parite.swift; sourceTree = "<group>"; };
+		F8D25F00246D1F9400E61A41 /* Finans.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Finans.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F8D25F03246D1F9400E61A41 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F8D25F05246D1F9400E61A41 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		F8D25F07246D1F9400E61A41 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F8D25F07246D1F9400E61A41 /* DovizVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DovizVC.swift; sourceTree = "<group>"; };
 		F8D25F0A246D1F9400E61A41 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F8D25F0C246D1F9700E61A41 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F8D25F0F246D1F9700E61A41 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F8D25F11246D1F9700E61A41 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F8D25F16246D1F9700E61A41 /* DovizTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DovizTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		F8D25F1A246D1F9700E61A41 /* DovizTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DovizTests.swift; sourceTree = "<group>"; };
+		F8D25F16246D1F9700E61A41 /* FinansTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FinansTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F8D25F1A246D1F9700E61A41 /* FinansTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinansTests.swift; sourceTree = "<group>"; };
 		F8D25F1C246D1F9700E61A41 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F8D25F21246D1F9700E61A41 /* DovizUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DovizUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		F8D25F25246D1F9700E61A41 /* DovizUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DovizUITests.swift; sourceTree = "<group>"; };
+		F8D25F21246D1F9700E61A41 /* FinansUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FinansUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F8D25F25246D1F9700E61A41 /* FinansUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinansUITests.swift; sourceTree = "<group>"; };
 		F8D25F27246D1F9700E61A41 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F8D25F36246D201200E61A41 /* DovizCek.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DovizCek.swift; sourceTree = "<group>"; };
+		F8D25F38246D624700E61A41 /* Doviz.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Doviz.swift; sourceTree = "<group>"; };
+		F8D25F3A246D665800E61A41 /* DovizTVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DovizTVCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +87,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F8D25F35246D1FCB00E61A41 /* SwiftSoup in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,12 +108,56 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F86699F4246E84CE00F18669 /* Doviz */ = {
+			isa = PBXGroup;
+			children = (
+				F8D25F07246D1F9400E61A41 /* DovizVC.swift */,
+				F8D25F3A246D665800E61A41 /* DovizTVCell.swift */,
+				F8D25F36246D201200E61A41 /* DovizCek.swift */,
+				F8D25F38246D624700E61A41 /* Doviz.swift */,
+			);
+			path = Doviz;
+			sourceTree = "<group>";
+		};
+		F86699F5246E84E800F18669 /* Kripto */ = {
+			isa = PBXGroup;
+			children = (
+				F86699F2246E845800F18669 /* KriptoVC.swift */,
+				F86699FA246E880900F18669 /* KriptoTVCell.swift */,
+				F86699F6246E850100F18669 /* KriptoCek.swift */,
+				F86699F8246E850B00F18669 /* Kripto.swift */,
+			);
+			path = Kripto;
+			sourceTree = "<group>";
+		};
+		F86699FC246E8FDB00F18669 /* Altin */ = {
+			isa = PBXGroup;
+			children = (
+				F8669A05246E93AA00F18669 /* AltinVC.swift */,
+				F8669A07246E944400F18669 /* AltinTVCell.swift */,
+				F8669A03246E917900F18669 /* AltinCek.swift */,
+				F8669A01246E916E00F18669 /* Altin.swift */,
+			);
+			path = Altin;
+			sourceTree = "<group>";
+		};
+		F8669A09246E98E700F18669 /* Pariteler */ = {
+			isa = PBXGroup;
+			children = (
+				F8669A0C246E9A0300F18669 /* ParitelerVC.swift */,
+				F8669A0A246E99F200F18669 /* ParitelerTVCell.swift */,
+				F8669A0E246E9A1200F18669 /* PariteCek.swift */,
+				F8669A10246E9A1E00F18669 /* Parite.swift */,
+			);
+			path = Pariteler;
+			sourceTree = "<group>";
+		};
 		F8D25EF7246D1F9400E61A41 = {
 			isa = PBXGroup;
 			children = (
-				F8D25F02246D1F9400E61A41 /* Doviz */,
-				F8D25F19246D1F9700E61A41 /* DovizTests */,
-				F8D25F24246D1F9700E61A41 /* DovizUITests */,
+				F8D25F02246D1F9400E61A41 /* Finans */,
+				F8D25F19246D1F9700E61A41 /* FinansTests */,
+				F8D25F24246D1F9700E61A41 /* FinansUITests */,
 				F8D25F01246D1F9400E61A41 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -89,51 +165,54 @@
 		F8D25F01246D1F9400E61A41 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				F8D25F00246D1F9400E61A41 /* Doviz.app */,
-				F8D25F16246D1F9700E61A41 /* DovizTests.xctest */,
-				F8D25F21246D1F9700E61A41 /* DovizUITests.xctest */,
+				F8D25F00246D1F9400E61A41 /* Finans.app */,
+				F8D25F16246D1F9700E61A41 /* FinansTests.xctest */,
+				F8D25F21246D1F9700E61A41 /* FinansUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		F8D25F02246D1F9400E61A41 /* Doviz */ = {
+		F8D25F02246D1F9400E61A41 /* Finans */ = {
 			isa = PBXGroup;
 			children = (
+				F8669A09246E98E700F18669 /* Pariteler */,
+				F86699FC246E8FDB00F18669 /* Altin */,
+				F86699F5246E84E800F18669 /* Kripto */,
+				F86699F4246E84CE00F18669 /* Doviz */,
 				F8D25F03246D1F9400E61A41 /* AppDelegate.swift */,
 				F8D25F05246D1F9400E61A41 /* SceneDelegate.swift */,
-				F8D25F07246D1F9400E61A41 /* ViewController.swift */,
 				F8D25F09246D1F9400E61A41 /* Main.storyboard */,
 				F8D25F0C246D1F9700E61A41 /* Assets.xcassets */,
 				F8D25F0E246D1F9700E61A41 /* LaunchScreen.storyboard */,
 				F8D25F11246D1F9700E61A41 /* Info.plist */,
 			);
-			path = Doviz;
+			path = Finans;
 			sourceTree = "<group>";
 		};
-		F8D25F19246D1F9700E61A41 /* DovizTests */ = {
+		F8D25F19246D1F9700E61A41 /* FinansTests */ = {
 			isa = PBXGroup;
 			children = (
-				F8D25F1A246D1F9700E61A41 /* DovizTests.swift */,
+				F8D25F1A246D1F9700E61A41 /* FinansTests.swift */,
 				F8D25F1C246D1F9700E61A41 /* Info.plist */,
 			);
-			path = DovizTests;
+			path = FinansTests;
 			sourceTree = "<group>";
 		};
-		F8D25F24246D1F9700E61A41 /* DovizUITests */ = {
+		F8D25F24246D1F9700E61A41 /* FinansUITests */ = {
 			isa = PBXGroup;
 			children = (
-				F8D25F25246D1F9700E61A41 /* DovizUITests.swift */,
+				F8D25F25246D1F9700E61A41 /* FinansUITests.swift */,
 				F8D25F27246D1F9700E61A41 /* Info.plist */,
 			);
-			path = DovizUITests;
+			path = FinansUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		F8D25EFF246D1F9400E61A41 /* Doviz */ = {
+		F8D25EFF246D1F9400E61A41 /* Finans */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = F8D25F2A246D1F9700E61A41 /* Build configuration list for PBXNativeTarget "Doviz" */;
+			buildConfigurationList = F8D25F2A246D1F9700E61A41 /* Build configuration list for PBXNativeTarget "Finans" */;
 			buildPhases = (
 				F8D25EFC246D1F9400E61A41 /* Sources */,
 				F8D25EFD246D1F9400E61A41 /* Frameworks */,
@@ -143,14 +222,17 @@
 			);
 			dependencies = (
 			);
-			name = Doviz;
+			name = Finans;
+			packageProductDependencies = (
+				F8D25F34246D1FCB00E61A41 /* SwiftSoup */,
+			);
 			productName = Doviz;
-			productReference = F8D25F00246D1F9400E61A41 /* Doviz.app */;
+			productReference = F8D25F00246D1F9400E61A41 /* Finans.app */;
 			productType = "com.apple.product-type.application";
 		};
-		F8D25F15246D1F9700E61A41 /* DovizTests */ = {
+		F8D25F15246D1F9700E61A41 /* FinansTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = F8D25F2D246D1F9700E61A41 /* Build configuration list for PBXNativeTarget "DovizTests" */;
+			buildConfigurationList = F8D25F2D246D1F9700E61A41 /* Build configuration list for PBXNativeTarget "FinansTests" */;
 			buildPhases = (
 				F8D25F12246D1F9700E61A41 /* Sources */,
 				F8D25F13246D1F9700E61A41 /* Frameworks */,
@@ -161,14 +243,14 @@
 			dependencies = (
 				F8D25F18246D1F9700E61A41 /* PBXTargetDependency */,
 			);
-			name = DovizTests;
+			name = FinansTests;
 			productName = DovizTests;
-			productReference = F8D25F16246D1F9700E61A41 /* DovizTests.xctest */;
+			productReference = F8D25F16246D1F9700E61A41 /* FinansTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		F8D25F20246D1F9700E61A41 /* DovizUITests */ = {
+		F8D25F20246D1F9700E61A41 /* FinansUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = F8D25F30246D1F9700E61A41 /* Build configuration list for PBXNativeTarget "DovizUITests" */;
+			buildConfigurationList = F8D25F30246D1F9700E61A41 /* Build configuration list for PBXNativeTarget "FinansUITests" */;
 			buildPhases = (
 				F8D25F1D246D1F9700E61A41 /* Sources */,
 				F8D25F1E246D1F9700E61A41 /* Frameworks */,
@@ -179,9 +261,9 @@
 			dependencies = (
 				F8D25F23246D1F9700E61A41 /* PBXTargetDependency */,
 			);
-			name = DovizUITests;
+			name = FinansUITests;
 			productName = DovizUITests;
-			productReference = F8D25F21246D1F9700E61A41 /* DovizUITests.xctest */;
+			productReference = F8D25F21246D1F9700E61A41 /* FinansUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -207,7 +289,7 @@
 					};
 				};
 			};
-			buildConfigurationList = F8D25EFB246D1F9400E61A41 /* Build configuration list for PBXProject "Doviz" */;
+			buildConfigurationList = F8D25EFB246D1F9400E61A41 /* Build configuration list for PBXProject "Finans" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -216,13 +298,16 @@
 				Base,
 			);
 			mainGroup = F8D25EF7246D1F9400E61A41;
+			packageReferences = (
+				F8D25F33246D1FCB00E61A41 /* XCRemoteSwiftPackageReference "SwiftSoup" */,
+			);
 			productRefGroup = F8D25F01246D1F9400E61A41 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				F8D25EFF246D1F9400E61A41 /* Doviz */,
-				F8D25F15246D1F9700E61A41 /* DovizTests */,
-				F8D25F20246D1F9700E61A41 /* DovizUITests */,
+				F8D25EFF246D1F9400E61A41 /* Finans */,
+				F8D25F15246D1F9700E61A41 /* FinansTests */,
+				F8D25F20246D1F9700E61A41 /* FinansUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -259,9 +344,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F8D25F08246D1F9400E61A41 /* ViewController.swift in Sources */,
+				F86699FB246E880900F18669 /* KriptoTVCell.swift in Sources */,
+				F8669A06246E93AA00F18669 /* AltinVC.swift in Sources */,
+				F8669A11246E9A1E00F18669 /* Parite.swift in Sources */,
+				F8D25F37246D201200E61A41 /* DovizCek.swift in Sources */,
+				F8669A0B246E99F200F18669 /* ParitelerTVCell.swift in Sources */,
+				F8D25F08246D1F9400E61A41 /* DovizVC.swift in Sources */,
+				F8D25F39246D624700E61A41 /* Doviz.swift in Sources */,
+				F8D25F3B246D665800E61A41 /* DovizTVCell.swift in Sources */,
+				F8669A08246E944400F18669 /* AltinTVCell.swift in Sources */,
+				F8669A02246E916E00F18669 /* Altin.swift in Sources */,
 				F8D25F04246D1F9400E61A41 /* AppDelegate.swift in Sources */,
 				F8D25F06246D1F9400E61A41 /* SceneDelegate.swift in Sources */,
+				F8669A04246E917900F18669 /* AltinCek.swift in Sources */,
+				F86699F7246E850100F18669 /* KriptoCek.swift in Sources */,
+				F8669A0F246E9A1200F18669 /* PariteCek.swift in Sources */,
+				F8669A0D246E9A0300F18669 /* ParitelerVC.swift in Sources */,
+				F86699F9246E850B00F18669 /* Kripto.swift in Sources */,
+				F86699F3246E845800F18669 /* KriptoVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -269,7 +369,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F8D25F1B246D1F9700E61A41 /* DovizTests.swift in Sources */,
+				F8D25F1B246D1F9700E61A41 /* FinansTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -277,7 +377,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F8D25F26246D1F9700E61A41 /* DovizUITests.swift in Sources */,
+				F8D25F26246D1F9700E61A41 /* FinansUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -286,12 +386,12 @@
 /* Begin PBXTargetDependency section */
 		F8D25F18246D1F9700E61A41 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = F8D25EFF246D1F9400E61A41 /* Doviz */;
+			target = F8D25EFF246D1F9400E61A41 /* Finans */;
 			targetProxy = F8D25F17246D1F9700E61A41 /* PBXContainerItemProxy */;
 		};
 		F8D25F23246D1F9700E61A41 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = F8D25EFF246D1F9400E61A41 /* Doviz */;
+			target = F8D25EFF246D1F9400E61A41 /* Finans */;
 			targetProxy = F8D25F22246D1F9700E61A41 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -436,13 +536,13 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2BH44AM79Q;
-				INFOPLIST_FILE = Doviz/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Finans/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.berkantbegdilili.Doviz;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.berkantbegdilili.Finans;
+				PRODUCT_NAME = Finans;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -454,13 +554,13 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2BH44AM79Q;
-				INFOPLIST_FILE = Doviz/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Finans/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.berkantbegdilili.Doviz;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.berkantbegdilili.Finans;
+				PRODUCT_NAME = Finans;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -484,7 +584,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Doviz.app/Doviz";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Finans.app/Finans";
 			};
 			name = Debug;
 		};
@@ -506,7 +606,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Doviz.app/Doviz";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Finans.app/Finans";
 			};
 			name = Release;
 		};
@@ -553,7 +653,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		F8D25EFB246D1F9400E61A41 /* Build configuration list for PBXProject "Doviz" */ = {
+		F8D25EFB246D1F9400E61A41 /* Build configuration list for PBXProject "Finans" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				F8D25F28246D1F9700E61A41 /* Debug */,
@@ -562,7 +662,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		F8D25F2A246D1F9700E61A41 /* Build configuration list for PBXNativeTarget "Doviz" */ = {
+		F8D25F2A246D1F9700E61A41 /* Build configuration list for PBXNativeTarget "Finans" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				F8D25F2B246D1F9700E61A41 /* Debug */,
@@ -571,7 +671,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		F8D25F2D246D1F9700E61A41 /* Build configuration list for PBXNativeTarget "DovizTests" */ = {
+		F8D25F2D246D1F9700E61A41 /* Build configuration list for PBXNativeTarget "FinansTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				F8D25F2E246D1F9700E61A41 /* Debug */,
@@ -580,7 +680,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		F8D25F30246D1F9700E61A41 /* Build configuration list for PBXNativeTarget "DovizUITests" */ = {
+		F8D25F30246D1F9700E61A41 /* Build configuration list for PBXNativeTarget "FinansUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				F8D25F31246D1F9700E61A41 /* Debug */,
@@ -590,6 +690,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		F8D25F33246D1FCB00E61A41 /* XCRemoteSwiftPackageReference "SwiftSoup" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/scinfu/SwiftSoup.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.3.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		F8D25F34246D1FCB00E61A41 /* SwiftSoup */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F8D25F33246D1FCB00E61A41 /* XCRemoteSwiftPackageReference "SwiftSoup" */;
+			productName = SwiftSoup;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = F8D25EF8246D1F9400E61A41 /* Project object */;
 }
